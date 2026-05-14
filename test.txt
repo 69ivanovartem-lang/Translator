@@ -1,0 +1,7 @@
+boolean a, b, c
+begin
+a := true
+b := false
+c := a .xor. b
+print c
+end

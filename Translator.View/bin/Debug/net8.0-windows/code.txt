@@ -1,0 +1,10 @@
+Boolean x, y, z
+Begin
+    x := True
+    y := False
+    z := x .AND. y
+    z := x .OR. y
+    z := .NOT. z
+    z := x .XOR. y
+End;
+Print z

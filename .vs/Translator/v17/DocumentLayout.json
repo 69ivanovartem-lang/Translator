@@ -1,0 +1,214 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Translator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|d:\\translator\\translator.core\\lexicalanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|solutionrelative:translator.core\\lexicalanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|d:\\translator\\translator.core\\syntaxanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|solutionrelative:translator.core\\syntaxanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|d:\\translator\\translator.core\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|solutionrelative:translator.core\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|d:\\translator\\translator.core\\codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|solutionrelative:translator.core\\codegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\core\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|d:\\translator\\translator.view\\core\\observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E287199-8E1F-4A90-8985-74E1F55F4C5A}|Translator.View\\Translator.View.csproj|solutionrelative:translator.view\\core\\observableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|d:\\translator\\translator.core\\nametable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE40DE6-49D1-4793-B6E7-4A3A6A4000A1}|Translator.Core\\Translator.Core.csproj|solutionrelative:translator.core\\nametable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\App.xaml",
+              "RelativeDocumentMoniker": "Translator.View\\App.xaml",
+              "ToolTip": "D:\\Translator\\Translator.View\\App.xaml",
+              "RelativeToolTip": "Translator.View\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-13T06:54:45.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Translator.View\\MainWindow.xaml",
+              "ToolTip": "D:\\Translator\\Translator.View\\MainWindow.xaml",
+              "RelativeToolTip": "Translator.View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-13T06:38:54.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Translator.View\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Translator\\Translator.View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Translator.View\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwBoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T06:26:23.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\Core\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Translator.View\\Core\\RelayCommand.cs",
+              "ToolTip": "D:\\Translator\\Translator.View\\Core\\RelayCommand.cs",
+              "RelativeToolTip": "Translator.View\\Core\\RelayCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T06:26:09.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ObservableObject.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\Core\\ObservableObject.cs",
+              "RelativeDocumentMoniker": "Translator.View\\Core\\ObservableObject.cs",
+              "ToolTip": "D:\\Translator\\Translator.View\\Core\\ObservableObject.cs",
+              "RelativeToolTip": "Translator.View\\Core\\ObservableObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T06:26:03.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Translator.View\\MainWindow.xaml",
+              "ToolTip": "D:\\Translator\\Translator.View\\MainWindow.xaml",
+              "RelativeToolTip": "Translator.View\\MainWindow.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-13T06:01:34.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reader.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.Core\\Reader.cs",
+              "RelativeDocumentMoniker": "Translator.Core\\Reader.cs",
+              "ToolTip": "D:\\Translator\\Translator.Core\\Reader.cs",
+              "RelativeToolTip": "Translator.Core\\Reader.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAmwFoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:08:52.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NameTable.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.Core\\NameTable.cs",
+              "RelativeDocumentMoniker": "Translator.Core\\NameTable.cs",
+              "ToolTip": "D:\\Translator\\Translator.Core\\NameTable.cs",
+              "RelativeToolTip": "Translator.Core\\NameTable.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T10:08:50.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SyntaxAnalyzer.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.Core\\SyntaxAnalyzer.cs",
+              "RelativeDocumentMoniker": "Translator.Core\\SyntaxAnalyzer.cs",
+              "ToolTip": "D:\\Translator\\Translator.Core\\SyntaxAnalyzer.cs",
+              "RelativeToolTip": "Translator.Core\\SyntaxAnalyzer.cs",
+              "ViewState": "AQIAAPQAAAAAAAAAAAAuwB0BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T09:55:45.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LexicalAnalyzer.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.Core\\LexicalAnalyzer.cs",
+              "RelativeDocumentMoniker": "Translator.Core\\LexicalAnalyzer.cs",
+              "ToolTip": "D:\\Translator\\Translator.Core\\LexicalAnalyzer.cs",
+              "RelativeToolTip": "Translator.Core\\LexicalAnalyzer.cs",
+              "ViewState": "AQIAAHUBAAAAAAAAAAAwwKABAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T09:53:10.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CodeGenerator.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.Core\\CodeGenerator.cs",
+              "RelativeDocumentMoniker": "Translator.Core\\CodeGenerator.cs",
+              "ToolTip": "D:\\Translator\\Translator.Core\\CodeGenerator.cs",
+              "RelativeToolTip": "Translator.Core\\CodeGenerator.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAzwMcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T09:53:09.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\Translator\\Translator.View\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Translator.View\\MainViewModel.cs",
+              "ToolTip": "D:\\Translator\\Translator.View\\MainViewModel.cs",
+              "RelativeToolTip": "Translator.View\\MainViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T09:50:38.475Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
