@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Translator\\Translator.Core\\Translator.Core.csproj": {}
+    "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj": {}
   },
   "projects": {
-    "D:\\Translator\\Translator.Core\\Translator.Core.csproj": {
+    "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Translator\\Translator.Core\\Translator.Core.csproj",
+        "projectUniqueName": "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj",
         "projectName": "Translator.Core",
-        "projectPath": "D:\\Translator\\Translator.Core\\Translator.Core.csproj",
+        "projectPath": "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj",
         "packagesPath": "C:\\Users\\Academy\\.nuget\\packages\\",
-        "outputPath": "D:\\Translator\\Translator.Core\\obj\\",
+        "outputPath": "D:\\Translator\\Translator\\Translator.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Academy\\AppData\\Roaming\\NuGet\\NuGet.Config",

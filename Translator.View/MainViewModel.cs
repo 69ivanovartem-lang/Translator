@@ -1,8 +1,6 @@
 ﻿using Microsoft.Win32;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
-using System.Reflection.PortableExecutable;
 using System.Windows;
 using Translator.Core;
 using Translator.View.ViewModel.Core;
@@ -11,143 +9,138 @@ namespace Translator.View.ViewModel
 {
     public class MainViewModel : ObservableObject
     {
-        const string SourceFileName = "code";
-        const string ProgramFileName = "compile";
+        private RelayCommand? _openFileCommand;
+        private RelayCommand? _saveFileCommand;
+        private RelayCommand? _compileCommand;
+        private RelayCommand? _compileAndRunCommand;
+        private RelayCommand? _saveAsmCommand;
 
-        private RelayCommand? openFileCommand = null;
-        public RelayCommand OpenFileCommand
-        {
-            get
-            {
-                return openFileCommand ??
-                  (openFileCommand = new RelayCommand(obj =>
-                  {
-                      OpenFile();
-                  }));
-            }
-        }
+        public RelayCommand OpenFileCommand => _openFileCommand ??= new RelayCommand(obj => OpenFile());
+        public RelayCommand SaveFileCommand => _saveFileCommand ??= new RelayCommand(obj => SaveFile());
+        public RelayCommand CompileCommand => _compileCommand ??= new RelayCommand(obj => Compile());
+        public RelayCommand CompileAndRunCommand => _compileAndRunCommand ??= new RelayCommand(obj => CompileAndRun());
+        public RelayCommand SaveAsmCommand => _saveAsmCommand ??= new RelayCommand(obj => SaveAsm());
 
         private void OpenFile()
         {
-            var openFileDialog = new Microsoft.Win32.OpenFileDialog
+            var dialog = new OpenFileDialog { Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*" };
+            if (dialog.ShowDialog() == true)
             {
-                Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"
-            };
-
-            if (openFileDialog.ShowDialog() == true)
-            {
-                if (Path.GetExtension(openFileDialog.FileName) != ".txt")
-                {
-                    MessageBox.Show("Пожалуйста, выберите текстовый файл (.txt)", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-
-                InputText = File.ReadAllText(openFileDialog.FileName);
-            }
-        }
-
-        private RelayCommand? saveFileCommand = null;
-        public RelayCommand SaveFileCommand
-        {
-            get
-            {
-                return saveFileCommand ??
-                  (saveFileCommand = new RelayCommand(obj =>
-                  {
-                      SaveFile();
-                  }));
+                InputText = File.ReadAllText(dialog.FileName);
             }
         }
 
         private void SaveFile()
         {
-            var saveFileDialog = new Microsoft.Win32.SaveFileDialog
+            var dialog = new SaveFileDialog { Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*" };
+            if (dialog.ShowDialog() == true)
             {
-                Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*"
-            };
-
-            if (saveFileDialog.ShowDialog() == true)
-            {
-                File.WriteAllText(saveFileDialog.FileName, InputText);
+                File.WriteAllText(dialog.FileName, InputText);
             }
         }
 
-        private RelayCommand? compileAndRunCommand = null;
-        public RelayCommand CompileAndRunCommand
+        private void SaveAsm()
         {
-            get
+            if (string.IsNullOrWhiteSpace(OutputText))
             {
-                return compileAndRunCommand ??
-                  (compileAndRunCommand = new RelayCommand(obj =>
-                  {
-                      CompileAndRun();
-                  }));
+                MessageBox.Show("Сначала скомпилируйте программу", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            var dialog = new SaveFileDialog { Filter = "ASM files (*.asm)|*.asm|All files (*.*)|*.*", FileName = "output.asm" };
+            if (dialog.ShowDialog() == true)
+            {
+                File.WriteAllText(dialog.FileName, OutputText);
+                MessageBox.Show($"ASM код сохранен", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void Compile()
+        {
+            try
+            {
+                var syntaxAnalyzer = new SyntaxAnalyzer();
+                syntaxAnalyzer.Compile(InputText);
+                OutputText = string.Join("\n", CodeGenerator.GetGeneratedCode());
+                MessageBox.Show("Компиляция успешна!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                OutputText = ex.Message;
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void CompileAndRun()
         {
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string sourceFilePath = Path.Combine(baseDirectory, SourceFileName + ".txt");
-            string compiledFilePath = Path.Combine(baseDirectory, ProgramFileName + ".asm");
-
-            // Сохраняем исходный код
-            File.WriteAllText(sourceFilePath, InputText);
-
             try
             {
-                // Компилируем
+                // Сначала компилируем
                 var syntaxAnalyzer = new SyntaxAnalyzer();
                 syntaxAnalyzer.Compile(InputText);
-
-                // Получаем сгенерированный код
                 var code = string.Join("\n", CodeGenerator.GetGeneratedCode());
                 OutputText = code;
 
-                // Сохраняем ASM файл
-                File.WriteAllText(compiledFilePath, code);
+                // Путь к DOSBox
+                string dosBoxPath = @"D:\Translator\Translator\Translator.View\bin\Debug\net8.0-windows\DOSBox\DOSBox.exe";
+                string workDir = @"C:\TranslatorTemp";
 
-                // Показываем сообщение об успехе
-                MessageBox.Show(
-                    $"Компиляция успешно завершена!\n\n" +
-                    $"Сгенерированный ассемблерный код сохранен в:\n{compiledFilePath}\n\n" +
-                    $"Код содержит {CodeGenerator.GetGeneratedCode().Length} строк.\n\n" +
-                    $"Для запуска в DOSBox:\n" +
-                    $"1. Установите DOSBox\n" +
-                    $"2. Скопируйте файл {ProgramFileName}.asm в папку с MASM\n" +
-                    $"3. Выполните: MASM {ProgramFileName}.asm; LINK {ProgramFileName}.obj; {ProgramFileName}.exe",
-                    "Успех",
-                    MessageBoxButton.OK,
-                    MessageBoxImage.Information);
+                if (!Directory.Exists(workDir))
+                    Directory.CreateDirectory(workDir);
+
+                // Сохраняем ASM файл
+                string asmPath = Path.Combine(workDir, "compile.asm");
+                File.WriteAllText(asmPath, code);
+
+                // Копируем MASM и LINK
+                string dosBoxDir = Path.GetDirectoryName(dosBoxPath);
+                File.Copy(Path.Combine(dosBoxDir, "MASM.EXE"), Path.Combine(workDir, "MASM.EXE"), true);
+                File.Copy(Path.Combine(dosBoxDir, "LINK.EXE"), Path.Combine(workDir, "LINK.EXE"), true);
+
+                // Создаем BAT файл
+                string batContent = @"@echo off
+MASM.EXE compile.asm;
+LINK.EXE compile.obj;
+compile.exe
+pause";
+                File.WriteAllText(Path.Combine(workDir, "build.bat"), batContent);
+
+                // Создаем конфиг DOSBox
+                string confContent = $@"[autoexec]
+mount C ""{workDir}""
+C:
+build.bat
+exit";
+                File.WriteAllText(Path.Combine(workDir, "dosbox.conf"), confContent);
+
+                // Запускаем DOSBox
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = dosBoxPath,
+                    Arguments = $"-conf \"{Path.Combine(workDir, "dosbox.conf")}\"",
+                    UseShellExecute = false
+                });
+
+                MessageBox.Show("DOSBox запущен!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                OutputText = $"Ошибка компиляции: {ex.Message}";
-                MessageBox.Show(ex.Message, "Ошибка компиляции", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
-        private string _inputText = string.Empty;
-        private string _outputText = string.Empty;
+        private string _inputText = @"Boolean x, y, z
+Begin
+    x := True
+    y := False
+    z := x .AND. y
+    z := x .OR. y
+    z := .NOT. z
+End
+Print z";
 
-        public string InputText
-        {
-            get => _inputText;
-            set
-            {
-                _inputText = value;
-                OnPropertyChanged(nameof(InputText));
-            }
-        }
+        private string _outputText = "";
 
-        public string OutputText
-        {
-            get => _outputText;
-            set
-            {
-                _outputText = value;
-                OnPropertyChanged(nameof(OutputText));
-            }
-        }
+        public string InputText { get => _inputText; set { _inputText = value; OnPropertyChanged(); } }
+        public string OutputText { get => _outputText; set { _outputText = value; OnPropertyChanged(); } }
     }
 }

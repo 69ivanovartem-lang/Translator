@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Translator\\Translator.Integration\\Translator.Integration.csproj": {}
+    "D:\\Translator\\Translator\\Translator.Integration\\Translator.Integration.csproj": {}
   },
   "projects": {
-    "D:\\Translator\\Translator.Core\\Translator.Core.csproj": {
+    "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Translator\\Translator.Core\\Translator.Core.csproj",
+        "projectUniqueName": "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj",
         "projectName": "Translator.Core",
-        "projectPath": "D:\\Translator\\Translator.Core\\Translator.Core.csproj",
+        "projectPath": "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj",
         "packagesPath": "C:\\Users\\Academy\\.nuget\\packages\\",
-        "outputPath": "D:\\Translator\\Translator.Core\\obj\\",
+        "outputPath": "D:\\Translator\\Translator\\Translator.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Academy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Translator\\Translator.Integration\\Translator.Integration.csproj": {
+    "D:\\Translator\\Translator\\Translator.Integration\\Translator.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Translator\\Translator.Integration\\Translator.Integration.csproj",
+        "projectUniqueName": "D:\\Translator\\Translator\\Translator.Integration\\Translator.Integration.csproj",
         "projectName": "Translator.Integration",
-        "projectPath": "D:\\Translator\\Translator.Integration\\Translator.Integration.csproj",
+        "projectPath": "D:\\Translator\\Translator\\Translator.Integration\\Translator.Integration.csproj",
         "packagesPath": "C:\\Users\\Academy\\.nuget\\packages\\",
-        "outputPath": "D:\\Translator\\Translator.Integration\\obj\\",
+        "outputPath": "D:\\Translator\\Translator\\Translator.Integration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Academy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Translator\\Translator.Core\\Translator.Core.csproj": {
-                "projectPath": "D:\\Translator\\Translator.Core\\Translator.Core.csproj"
+              "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj": {
+                "projectPath": "D:\\Translator\\Translator\\Translator.Core\\Translator.Core.csproj"
               }
             }
           }

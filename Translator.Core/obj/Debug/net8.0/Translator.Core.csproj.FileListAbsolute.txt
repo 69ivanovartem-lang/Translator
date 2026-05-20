@@ -9,3 +9,15 @@ D:\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.dll
 D:\Translator\Translator.Core\obj\Debug\net8.0\refint\Translator.Core.dll
 D:\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.pdb
 D:\Translator\Translator.Core\obj\Debug\net8.0\ref\Translator.Core.dll
+D:\Translator\Translator\Translator.Core\bin\Debug\net8.0\Translator.Core.deps.json
+D:\Translator\Translator\Translator.Core\bin\Debug\net8.0\Translator.Core.dll
+D:\Translator\Translator\Translator.Core\bin\Debug\net8.0\Translator.Core.pdb
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.AssemblyInfoInputs.cache
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.AssemblyInfo.cs
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.csproj.CoreCompileInputs.cache
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.sourcelink.json
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.dll
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\refint\Translator.Core.dll
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\Translator.Core.pdb
+D:\Translator\Translator\Translator.Core\obj\Debug\net8.0\ref\Translator.Core.dll
